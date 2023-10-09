@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de Clientes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header h2 {
+      margin: 0;
+    }
+
+    .btn-back {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-back:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .client-list {
+      width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+    .client-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .client-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .client-info {
+      flex-grow: 1;
+    }
+
+    .client-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .client-email {
+      color: #666;
+    }
+
+    .client-purchase {
+      color: #2196F3;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .client-purchase:hover {
+      text-decoration: underline;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .search-bar input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Lista de Clientes</h2>
+      <a href="adm-20230526T183110Z-001/adm.html" class="btn-back">Voltar às Vendas</a>
+    </div>
+  </div>
+
+  <div class="client-list">
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar clientes...">
+    </div>
+
+    <div class="client-item">
+      <img class="client-avatar" src="fotofernando.jpg" alt="Avatar">
+      <div class="client-info">
+        <div class="client-name">Fernando Lima</div>
+        <div class="client-email">fernando.lima@example.com</div>
+        <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+      </div>
+    </div>
+    
+    <div class="client-item">
+        <img class="client-avatar" src="fotogabriel.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Gabriel Menezes</div>
+          <div class="client-email">gabriel.menezes@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+    <div class="client-item">
+      <img class="client-avatar" src="fotoju.jpg" alt="Avatar">
+      <div class="client-info">
+        <div class="client-name">Julia de Castro</div>
+        <div class="client-email">julia.castro@example.com</div>
+        <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+      </div>
+    </div>
+
+    <div class="client-item">
+        <img class="client-avatar" src="fotorafa.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Rafael Furry</div>
+          <div class="client-email">rafa.furry@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <img class="client-avatar" src="fotoleo.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Leonardo Macaxera</div>
+          <div class="client-email">elo.macaxera@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+    <div class="client-item">
+        <img class="client-avatar" src="fotoduda.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Maria Eduarda Aquino</div>
+          <div class="client-email">maria.eduarda@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <img class="client-avatar" src="fotoanna.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Anna Jullia Menezes</div>
+          <div class="client-email">anna.jullia@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <img class="client-avatar" src="fotokau.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Kauany</div>
+          <div class="client-email">kauany@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+    <div class="client-item">
+      <img class="client-avatar" src="foto3eu.jpg" alt="Avatar">
+      <div class="client-info">
+        <div class="client-name">Ana Luiza Rodrigues</div>
+        <div class="client-email">ana.luiza@example.com</div>
+        <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+      </div>
+    </div>
+
+    <div class="client-item">
+        <img class="client-avatar" src="fotopedrosa.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Pedrosa</div>
+          <div class="client-email">pedrosa@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <img class="client-avatar" src="fotoluis.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Luis Claudio</div>
+          <div class="client-email">luis.claudio@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <img class="client-avatar" src="fotodaniel.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Daniel Taiga</div>
+          <div class="client-email">daniel.taiga@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <img class="client-avatar" src="fotopedro.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Pedro</div>
+          <div class="client-email">pedro@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+
+    <div class="client-item">
+        <img class="client-avatar" src="fototutu.jpg" alt="Avatar">
+        <div class="client-info">
+          <div class="client-name">Arthur Dias</div>
+          <div class="client-email">arthur.dias@example.com</div>
+          <a href="#" class="client-purchase">Ver Detalhes da Compra</a>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

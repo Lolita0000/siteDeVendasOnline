@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minhas Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/css/css.css">
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="index logado.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
+            </svg>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="Fale conosco.html" class="nav-link px-2 text-white">Fale conosco</a></li>
+            <li><a href="Sobre.html" class="nav-link px-2 text-white">Sobre</a></li>
+            <li><a href="cart.html" class="nav-link px-2 text-white">Carrinho</a></li>
+            <li><a href="favoritos.html" class="nav-link px-2 text-white">Favoritos</a></li>
+            <li><a href="MinhasCompras.html" class="nav-link px-2 text-white">Minhas Compras</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          </form>
+
+          <div class="text-end">
+            <a href="login.html">
+              <button type="button" class="btn btn-outline-light me-2" style="color: aquamarine;">Desconectar</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container mt-5">
+        <h1>Minhas Compras</h1>
+        <p>Aqui estão as suas compras recentes:</p>
+        <!-- Adicione aqui o conteúdo das suas compras -->
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header h2 {
+      margin: 0;
+    }
+
+    .btn-back {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-back:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .chart-container {
+      width: 600px;
+      height: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    table {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: none;
+    }
+
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    tr:hover {
+      background-color: black;
+    }
+
+    td:nth-child(n+3),
+    th:nth-child(n+3) {
+      text-align: center;
+    }
+
+    .total-column {
+      font-weight: bold;
+    }
+
+    .product-label {
+      display: flex;
+      align-items: center;
+    }
+
+    .product-label::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .product-label.mouse::before {
+      background-color: #2196F3;
+    }
+
+    .product-label.headset::before {
+      background-color: #1565C0;
+    }
+
+    .product-label.monitor::before {
+      background-color: #0D47A1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      
+      
+    </div>
+  </div>
+
+ 
+
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Preço Unitário</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01/12/2023</td>
+        <td>
+          <div class="product-label mouse"></div>
+          Mouse Logitech G502
+        </td>
+        <td>1</td>
+        <td>R$ 50,00</td>
+        <td>R$ 50,00</td>
+      </tr>
+      <tr>
+        <td>05/12/2023</td>
+        <td>
+          <div class="product-label headset"></div>
+          Headset HyperX Cloud Stinger
+        </td>
+        <td>1</td>
+        <td>R$ 319,99</td>
+        <td>R$ 319,99</td>
+      </tr>
+      
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4" class="total-column">Total</td>
+        <td>R$ 369,00</td>
+      </tr>
+    </tfoot>
+  </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container mt-5 text-center">
+        <p>&copy; 2023 Nome da sua empresa. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-i1L7AzIdIFUG9X5iBck2J+gAN7B4l1R6t92uY7d2WYtwevT4fS+RkmZzheACjjFg" crossorigin="anonymous"></script>
+  </body>
+</html>
